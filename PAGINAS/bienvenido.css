@@ -1,0 +1,18 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image:url("https://www.paogi.com/uploads/ckeditor/pictures/144/guia-de-joyas-Desktop-IMG6.png");
+	background-size: cover;
+	font-family: georgia, times, serif;
+	height: 100vh;
+
+}
+
+h1{
+	color: black;
+}
+
+
+h2{
+	color: white;
+}

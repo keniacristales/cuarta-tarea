@@ -1,40 +1,53 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>EXAMEN</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="paginas.css">
-	</head>
-	 <body background="https://www.paogi.com/uploads/ckeditor/pictures/144/guia-de-joyas-Desktop-IMG6.png"> 
-	 	<header class="header">
-	 		<div class="container logo-nav-container">
-	 			<a href="# class="logo">JOYERIA RIVERA</a>
-	 			<nav class="navegation">
-	 				<ul>
-		<li><a href="">INICIO</a></li>
-		<li><a href="PAGINAS/SERVICIOS.HTML">ACERCA DE</a></li>
-		<li><a href="PAGINAS/SOBRE MI.HTML">PRODUCTOS O SERVICIOS</a></li>
-		<li><a href="PAGINAS/CONTACTAME.HTML">CONTACTAME</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main class="main">
+<head>
+<title> EXAMEN </title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script>
+function comprobarClave(){
+clave1 = document.f1.clave1.value
+clave2 = document.f1.clave2.value
 
-			<div class="container">
-		<div align="center"><img src="https://www.lawebdeseguros.com/wp-content/uploads/2012/12/JOYERIAS-2-630x466.jpg" width="350" height="300">
-			<h1>MISIÓN</h1>
-			<P>Nuestra mision y compromiso es brindarte a ti y a tu familia, la mas alta calidad en joyas, los estilos clasicos y modernos, lo que prefieras. <br>Nuestros accesorios son comodos, elegantes, divertidos, según la ocasion para la que quieras usarlos.</P>
 
-			<h1>VISIÓN</h1>
-			<P>Llegar a ser la joyeria mas reconocida, internacionalmente, ser los proveedores de las masrcas mas importantes ahora, posicionarnos como la joyeria numero uno en el mercado, por su calidad y transparencia.</P>
-				</div>
-			</main>
-			<footer class="footer">
-				<div class="container">
-					<p> Diseñado, por KENIA MARISOL CRISTALES RIVERA, 5to BACO</p>
-					
-				</div>
-				
-			</footer>
-	</body>
-</html>
+if (clave1 == "kenia" && clave2 == "cristales"){
+alert("los datos coinciden ...\n Pase adelante");
+var href ="paginas.html";
+window.location=href;
+    }
+
+    else{
+    alert("las dos claves son distintas...\n intente nuevamente.");
+    var href = "index.html";
+    window.location=href;
+    };
+
+  }
+</script>
+</head>
+
+<body>
+	<h1>usuario:kenia</h1>
+	<h1>contraseña:cristales</h1>
+<div class="login">
+<h1> VALIDAR SOLO CON DATOS CORRECTOS</h1>
+<br>
+Llena los datos solicitados.
+
+<br>
+<form action="" name="f1">
+<label>USUARIO</label>
+<input type="password" name ="clave1" size="20">
+<br>
+<LABEL>CONTRASEÑA</LABEL>
+<input type="password" name ="clave2" size="20">
+<br>
+<input type="button" value=" VERIFICAR "  onclick="comprobarClave()">
+
+</form>
+
+</div>
+   
+ </body>
+ </html>
+
+	
